@@ -36,8 +36,11 @@ namespace ConsoleApp2
                     }
                 }
             }
-            if (len == 0) res = 0;
-            else res = BinarySearch(numarray, required_weight, 0, len - 1);//поиск за минимальное кол-во взешиваний
+            if (len == 0) res = -1;
+            else
+            {
+                res = BinarySearch(numarray, required_weight, 0, len);//поиск за минимальное кол-во взешиваний
+            }
             try
             {
                 using (StreamWriter sw = new StreamWriter(writePath, false, System.Text.Encoding.Default))
@@ -56,7 +59,7 @@ namespace ConsoleApp2
         {
             if (first > last)
             {
-                return 0;
+                return -1;
             }
             int middle = (first + last) / 2;
             int middleValue = array[middle];
