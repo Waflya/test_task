@@ -31,7 +31,7 @@ namespace ConsoleApp2
                     numarray = new int[len];                //инициализируем массив
                     while ((line = sr.ReadLine()) != null)
                     {
-                        numarray[i] = int.Parse(line);      //запись чисел в массив
+                        numarray[i] = int.Parse(line);      //запись чисел в массив 
                         i++;
                     }
                 }
