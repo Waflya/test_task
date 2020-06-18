@@ -42,7 +42,7 @@ namespace ConsoleApp2
             {
                 using (StreamWriter sw = new StreamWriter(writePath, false, System.Text.Encoding.Default))
                 {
-                    sw.WriteLine(res);                  //вывод результата в текстовый файл
+                    sw.WriteLine(res + 1);                  //вывод результата в текстовый файл
                 }
             }
             catch (Exception e)
