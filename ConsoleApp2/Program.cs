@@ -39,7 +39,7 @@ namespace ConsoleApp2
             if (len == 0) res = -1;
             else
             {
-                res = BinarySearch(numarray, required_weight, 0, len);//поиск за минимальное кол-во взешиваний
+                res = BinarySearch(numarray, required_weight, 0, len);//поиск за минимальное кол-во взвешиваний
             }
             try
             {
